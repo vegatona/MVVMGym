@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mockup.RegisterPage"
+             Title="Registro - Iron Revolution Center">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Frame Padding="20" CornerRadius="10" HasShadow="True" BackgroundColor="White">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Crea tu cuenta" FontSize="22" FontAttributes="Bold" />
+                    <Label Text="Crea una cuenta para poder iniciar sesión" FontSize="14" />
+
+                    <!-- Campo de Usuario -->
+                    <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="5">
+                        <Grid ColumnDefinitions="40, *">
+                            <Image Source="identificacion.png" WidthRequest="20" HeightRequest="20"
+                                   VerticalOptions="Center" Margin="10"/>
+                            <Entry x:Name="UsernameEntry" Placeholder="Usuario (6 dígitos)" Keyboard="Numeric" Grid.Column="1" 
+                                   MaxLength="6" TextChanged="OnUsernameTextChanged" />
+                        </Grid>
+                    </Frame>
+
+                    <!-- Alerta debajo del campo de usuario -->
+                    <Label x:Name="UsernameErrorLabel" TextColor="Red" IsVisible="False" />
+
+                    <!-- Campo de Contraseña -->
+                    <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="5">
+                        <Grid ColumnDefinitions="40, *">
+                            <Image Source="lock.png" WidthRequest="20" HeightRequest="20"
+                                   VerticalOptions="Center" Margin="10"/>
+                            <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" Grid.Column="1"
+                                   TextChanged="OnPasswordTextChanged" />
+                        </Grid>
+                    </Frame>
+
+                    <!-- Alerta debajo del campo de contraseña -->
+                    <Label x:Name="PasswordErrorLabel" TextColor="Red" IsVisible="False" />
+
+                    <!-- Repetir Contraseña -->
+                    <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="5">
+                        <Grid ColumnDefinitions="40, *">
+                            <Image Source="lock.png" WidthRequest="20" HeightRequest="20"
+                                   VerticalOptions="Center" Margin="10"/>
+                            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Repite Contraseña" IsPassword="True" Grid.Column="1"
+                                   TextChanged="OnPasswordTextChanged" />
+                        </Grid>
+                    </Frame>
+
+                    <!-- Alerta de las contraseñas no coinciden -->
+                    <Label x:Name="ConfirmPasswordErrorLabel" TextColor="Red" IsVisible="False" />
+
+                    <Button x:Name="RegisterButton" Text="Registrarse" BackgroundColor="Black" TextColor="White" 
+                            CornerRadius="5" IsEnabled="False" Clicked="OnRegisterClicked"/>
+
+                    <!-- Botón para ir al Login -->
+                    <Label GestureRecognizers="{TapGestureRecognizer Command={Binding GoToLogin}}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="¿Ya tienes una cuenta? " />
+                                <Span Text="Inicia sesión aquí" TextColor="Blue"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

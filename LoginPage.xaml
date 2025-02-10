@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mockup.LoginPage"
+             Title="Iron Revolution Center">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Frame Padding="20" CornerRadius="10" HasShadow="True" BackgroundColor="White">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Iniciar Sesión" FontSize="22" FontAttributes="Bold" />
+                    <Label Text="Inicie sesión ingresando su usuario y contraseña." FontSize="14" />
+
+                    <!-- Campo de Usuario -->
+                    <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="5">
+                        <Grid ColumnDefinitions="40, *">
+                            <Image Source="identificacion.png" WidthRequest="20" HeightRequest="20"
+                                   VerticalOptions="Center" Margin="10"/>
+                            <Entry x:Name="UsernameEntry" Placeholder="Usuario (6 dígitos)" Keyboard="Numeric" 
+                                   TextChanged="OnUsernameTextChanged" Grid.Column="1" />
+                        </Grid>
+                    </Frame>
+
+                    <!-- Mensaje de Error para el Usuario -->
+                    <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" FontSize="12"/>
+
+                    <!-- Campo de Contraseña -->
+                    <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="5">
+                        <Grid ColumnDefinitions="40, *">
+                            <Image Source="lock.png" WidthRequest="20" HeightRequest="20"
+                                   VerticalOptions="Center" Margin="10"/>
+                            <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" 
+                                   TextChanged="OnPasswordTextChanged" Grid.Column="1" />
+                        </Grid>
+                    </Frame>
+
+                    <!-- Mensaje de Error para la Contraseña -->
+                    <Label x:Name="PasswordErrorLabel" TextColor="Red" IsVisible="False" FontSize="12"/>
+
+                    <Button x:Name="LoginButton" Text="Iniciar sesión" BackgroundColor="Black" TextColor="White" CornerRadius="5" Clicked="OnLoginClicked"/>
+
+                    <!-- Botón para ir a la página de recuperar contraseña -->
+                    <Label GestureRecognizers="{TapGestureRecognizer Command={Binding GoToRecoverPassword}}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="¿Has olvidado tu contraseña?" TextColor="Blue"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <!-- Botón para ir a la página de registro -->
+                    <Label GestureRecognizers="{TapGestureRecognizer Command={Binding GoToRegister}}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="¿No tienes una cuenta? " />
+                                <Span Text="Regístrate aquí" TextColor="Blue"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
