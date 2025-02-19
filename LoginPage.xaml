@@ -20,8 +20,7 @@
             <Frame CornerRadius="10" BackgroundColor="#F0F0F0" Padding="10">
                 <HorizontalStackLayout Spacing="10">
                     <Image Source="identificacion.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center"/>
-                    <Entry x:Name="UsernameEntry" Placeholder="Usuario" Keyboard="Text"
-                           FontSize="16" WidthRequest="2000" />
+                    <Entry x:Name="UsernameEntry" Placeholder="Usuario" Keyboard="Text" TextChanged="OnUsernameTextChanged" WidthRequest="2000"/>
                 </HorizontalStackLayout>
             </Frame>
             <Label x:Name="ErrorLabel" TextColor="Red" FontSize="12" IsVisible="False"/>
@@ -30,8 +29,7 @@
             <Frame CornerRadius="10" BackgroundColor="#F0F0F0" Padding="10">
                 <HorizontalStackLayout Spacing="10">
                     <Image Source="lock.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center"/>
-                    <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" FontSize="16"
-                           WidthRequest="2000" />
+                    <Entry x:Name="PasswordEntry" Placeholder="Usuario" Keyboard="Text" TextChanged="OnUsernameTextChanged" WidthRequest="2000"/>
                 </HorizontalStackLayout>
             </Frame>
             <Label x:Name="PasswordErrorLabel" TextColor="Red" FontSize="12" IsVisible="False"/>
