@@ -5,37 +5,55 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="20">
-            <Frame Padding="20" CornerRadius="10" HasShadow="True" BackgroundColor="White">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="Código" FontSize="22" FontAttributes="Bold" />
-                    <Label Text="Ingresar Código" FontSize="14" />
+            <!-- Título y subtítulo -->
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Código" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" 
+                       Margin="0,100,0,0"/>
+                <Label Text="Ingresa tu Código correctamente" FontSize="14" HorizontalOptions="Center"/>
 
-                    <!-- Código de verificación -->
-                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="5">
+                <!-- Código de verificación -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="5">
+                    <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">
                         <Entry x:Name="Entry1" WidthRequest="40" MaxLength="1" Keyboard="Numeric"
-                               TextChanged="OnEntryTextChanged"/>
+                               TextChanged="OnEntryTextChanged" BackgroundColor="Transparent"
+                               HorizontalTextAlignment="Center" />
+                    </Frame>
+                    <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">
                         <Entry x:Name="Entry2" WidthRequest="40" MaxLength="1" Keyboard="Numeric"
-                               TextChanged="OnEntryTextChanged"/>
+                               TextChanged="OnEntryTextChanged" BackgroundColor="Transparent"
+                               HorizontalTextAlignment="Center" />
+                    </Frame>
+                    <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">
                         <Entry x:Name="Entry3" WidthRequest="40" MaxLength="1" Keyboard="Numeric"
-                               TextChanged="OnEntryTextChanged"/>
-                        <Label Text="-" FontSize="22" VerticalOptions="Center"/>
+                               TextChanged="OnEntryTextChanged" BackgroundColor="Transparent"
+                               HorizontalTextAlignment="Center" />
+                    </Frame>
+                    <Label Text="-" FontSize="22" VerticalOptions="Center"/>
+                    <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">
                         <Entry x:Name="Entry4" WidthRequest="40" MaxLength="1" Keyboard="Numeric"
-                               TextChanged="OnEntryTextChanged"/>
+                               TextChanged="OnEntryTextChanged" BackgroundColor="Transparent"
+                               HorizontalTextAlignment="Center" />
+                    </Frame>
+                    <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">
                         <Entry x:Name="Entry5" WidthRequest="40" MaxLength="1" Keyboard="Numeric"
-                               TextChanged="OnEntryTextChanged"/>
+                               TextChanged="OnEntryTextChanged" BackgroundColor="Transparent"
+                               HorizontalTextAlignment="Center" />
+                    </Frame>
+                    <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">
                         <Entry x:Name="Entry6" WidthRequest="40" MaxLength="1" Keyboard="Numeric"
-                               TextChanged="OnEntryTextChanged"/>
-                    </HorizontalStackLayout>
+                               TextChanged="OnEntryTextChanged" BackgroundColor="Transparent"
+                               HorizontalTextAlignment="Center" />
+                    </Frame>
+                </HorizontalStackLayout>
 
-                    <!-- Mensaje de error -->
-                    <Label x:Name="errorLabel" TextColor="Red" FontSize="14" IsVisible="False"
-                           HorizontalOptions="Center" />
+                <!-- Mensaje de error -->
+                <Label x:Name="errorLabel" TextColor="Red" FontSize="14" IsVisible="False"
+                       HorizontalOptions="Center" />
 
-                    <!-- Botón deshabilitado inicialmente -->
-                    <Button x:Name="ConfirmButton" Text="Confirmar" BackgroundColor="Black" TextColor="White" CornerRadius="5"
-                            Clicked="OnConfirmClicked"/>
-                </VerticalStackLayout>
-            </Frame>
+                <!-- Botón deshabilitado inicialmente -->
+                <Button x:Name="ConfirmButton" Text="Confirmar" BackgroundColor="Black" TextColor="White" CornerRadius="5"
+                        Clicked="OnConfirmClicked"/>
+            </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

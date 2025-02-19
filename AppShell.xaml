@@ -43,4 +43,40 @@
         ContentTemplate="{DataTemplate local:UserDashboardPage}"
         Route="UserDashboardPage" />
 
+    <!-- Páginas de Rutina (días de la semana) -->
+    <ShellContent
+    Title="Lunes"
+    ContentTemplate="{DataTemplate local:RoutineMondayPage}"
+    Route="RoutineMondayPage" />
+
+    <ShellContent
+        Title="Martes"
+        ContentTemplate="{DataTemplate local:RoutineTuesdayPage}"
+        Route="RoutineTuesdayPage" />
+
+    <ShellContent
+        Title="Miércoles"
+        ContentTemplate="{DataTemplate local:RoutineWednesdayPage}"
+        Route="RoutineWednesdayPage" />
+
+    <ShellContent
+        Title="Jueves"
+        ContentTemplate="{DataTemplate local:RoutineThursdayPage}"
+        Route="RoutineThursdayPage" />
+
+    <ShellContent
+        Title="Viernes"
+        ContentTemplate="{DataTemplate local:RoutineFridayPage}"
+        Route="RoutineFridayPage" />
+
+    <ShellContent
+        Title="Sábado"
+        ContentTemplate="{DataTemplate local:RoutineSaturdayPage}"
+        Route="RoutineSaturdayPage" />
+
+    <ShellContent
+        Title="Domingo"
+        ContentTemplate="{DataTemplate local:RoutineSundayPage}"
+        Route="RoutineSundayPage" />
+
 </Shell>

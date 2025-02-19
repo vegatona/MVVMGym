@@ -1,0 +1,28 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mockup.RoutineFridayPage"
+             Title="Viernes - Rutina de Entrenamiento">
+
+    <ScrollView Padding="10">
+        <Frame Padding="-40" CornerRadius="15" HasShadow="True" BackgroundColor="White">
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <!-- Información del Usuario -->
+                <HorizontalStackLayout Spacing="15" HorizontalOptions="Start">
+                    <Image Source="{Binding UserImage}" WidthRequest="50" HeightRequest="50" />
+
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Username}" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="{Binding UserNumber}" FontSize="16" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <!-- Contenido específico de la rutina para el día -->
+                <VerticalStackLayout Padding="20" Spacing="10">
+                    <!-- Reduce Spacing -->
+                    <Label Text="Rutina del Viernes" FontSize="22" FontAttributes="Bold" 
+                    HorizontalOptions="Center" Margin="0,0"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+    </ScrollView>
+</ContentPage>

@@ -13,6 +13,9 @@ namespace Mockup
         private bool _isRoutinePickerVisible;
         private bool _isDatePickerVisible;
 
+        private bool isRoutineOpen = false;  // Bandera para controlar si las rutinas están abiertas
+        private bool isActivityOpen = false; // Bandera para controlar si la actividad está abierta
+
         public ObservableCollection<string> RoutineOptions { get; } = new ObservableCollection<string>
         {
             "Pecho", "Bíceps", "Tríceps", "Espalda", "Pierna"
@@ -115,6 +118,12 @@ namespace Mockup
         // Mostrar y ocultar el Picker de rutinas
         private void OnShowRoutinePicker(object sender, EventArgs e)
         {
+            // Si la actividad está abierta, no permitimos abrir las rutinas
+            if (isActivityOpen)
+            {
+                return;
+            }
+
             // Si ya se ha seleccionado una rutina, desmarcarla y mostrar el picker nuevamente
             if (!string.IsNullOrEmpty(SelectedRoutine))
             {
@@ -125,11 +134,77 @@ namespace Mockup
             RoutinePicker.IsVisible = _isRoutinePickerVisible;
         }
 
+        // Manejador de eventos para mostrar y ocultar los botones de rutina
+        private void OnShowRoutineButtons(object sender, EventArgs e)
+        {
+            // Si la actividad está abierta, no permitimos abrir los botones de rutina
+            if (isActivityOpen)
+            {
+                return;
+            }
+
+            // Mostrar u ocultar el layout con los botones de los días
+            DaysButtonsLayout.IsVisible = !DaysButtonsLayout.IsVisible;
+            isRoutineOpen = DaysButtonsLayout.IsVisible;
+        }
+
         // Mostrar y ocultar el DatePicker para la actividad
         private void OnShowDatePicker(object sender, EventArgs e)
         {
+            // Si las rutinas están abiertas, no permitimos abrir la actividad
+            if (isRoutineOpen)
+            {
+                return;
+            }
+
             _isDatePickerVisible = !_isDatePickerVisible;
             ActivityDatePicker.IsVisible = _isDatePickerVisible;
+            isActivityOpen = ActivityDatePicker.IsVisible;
+        }
+
+        // Manejador de eventos para la selección de un día
+        private async void OnDaySelected(object sender, EventArgs e)
+        {
+            // Obtener el parámetro del comando (el nombre de la página de la rutina)
+            var button = sender as Button;
+            var routinePage = button?.CommandParameter?.ToString();
+
+            // Realizar la navegación a la página de la rutina correspondiente
+            if (!string.IsNullOrEmpty(routinePage))
+            {
+                Page page = null;
+
+                switch (routinePage)
+                {
+                    case "RoutineMondayPage":
+                        page = new RoutineMondayPage();
+                        break;
+                    case "RoutineTuesdayPage":
+                        page = new RoutineTuesdayPage();
+                        break;
+                    case "RoutineWednesdayPage":
+                        page = new RoutineWednesdayPage();
+                        break;
+                    case "RoutineThursdayPage":
+                        page = new RoutineThursdayPage();
+                        break;
+                    case "RoutineFridayPage":
+                        page = new RoutineFridayPage();
+                        break;
+                    case "RoutineSaturdayPage":
+                        page = new RoutineSaturdayPage();
+                        break;
+                    case "RoutineSundayPage":
+                        page = new RoutineSundayPage();
+                        break;
+                }
+
+                // Si la página es válida, navegar a ella
+                if (page != null)
+                {
+                    await Navigation.PushAsync(page);
+                }
+            }
         }
 
         // Actualizar las rutinas detalladas según el músculo seleccionado

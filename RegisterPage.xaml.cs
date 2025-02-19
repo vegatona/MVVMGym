@@ -10,21 +10,37 @@ public partial class RegisterPage : ContentPage
         BindingContext = this;
     }
 
-    // Validación del usuario (solo 6 dígitos)
+    // Validación del usuario (permite letras y números, entre 3 y 12 caracteres)
     private void OnUsernameTextChanged(object sender, TextChangedEventArgs e)
     {
         string username = UsernameEntry.Text ?? "";
 
-        if (username.Length == 6)
+        // Permitir letras, números y algunos caracteres especiales
+        username = Regex.Replace(username, "[^a-zA-Z0-9._,@!*+-]", "");
+
+        // Limitar a 12 caracteres
+        if (username.Length > 12)
         {
-            UsernameErrorLabel.IsVisible = false;
-            RegisterButton.IsEnabled = IsValidPassword(PasswordEntry.Text) && PasswordEntry.Text == ConfirmPasswordEntry.Text;
+            username = username.Substring(0, 12);
+        }
+
+        // Asignar el texto filtrado nuevamente al Entry
+        UsernameEntry.TextChanged -= OnUsernameTextChanged; // Evitar bucles de actualización
+        UsernameEntry.Text = username;
+        UsernameEntry.TextChanged += OnUsernameTextChanged;
+
+        // Validación de longitud
+        if (username.Length < 3 || username.Length > 12)
+        {
+            UsernameErrorLabel.Text = "El usuario debe tener entre 3 y 12 caracteres.";
+            UsernameErrorLabel.IsVisible = true;
+            RegisterButton.IsEnabled = false;
         }
         else
         {
-            UsernameErrorLabel.Text = "El usuario debe tener 6 dígitos.";
-            UsernameErrorLabel.IsVisible = true;
-            RegisterButton.IsEnabled = false;
+            UsernameErrorLabel.IsVisible = false;
+            // Solo habilitar el botón de registro si las contraseñas son correctas
+            RegisterButton.IsEnabled = IsValidPassword(PasswordEntry.Text) && PasswordEntry.Text == ConfirmPasswordEntry.Text;
         }
     }
 
@@ -53,6 +69,7 @@ public partial class RegisterPage : ContentPage
             else
             {
                 ConfirmPasswordErrorLabel.IsVisible = false;
+                // Habilitar el botón de registro si todo es válido
                 RegisterButton.IsEnabled = true;
             }
         }
@@ -66,9 +83,9 @@ public partial class RegisterPage : ContentPage
         string confirmPassword = ConfirmPasswordEntry.Text ?? "";
 
         // Validaciones antes de proceder
-        if (string.IsNullOrWhiteSpace(username) || username.Length != 6)
+        if (string.IsNullOrWhiteSpace(username) || username.Length < 3 || username.Length > 12)
         {
-            await DisplayAlert("Error", "El usuario debe tener 6 dígitos.", "OK");
+            await DisplayAlert("Error", "El usuario debe tener entre 3 y 12 caracteres.", "OK");
             return;
         }
 

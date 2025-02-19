@@ -13,41 +13,77 @@
             </VerticalStackLayout>
         </HorizontalStackLayout>
 
+        <!-- Información del Usuario -->
         <Frame CornerRadius="10" Padding="10" BorderColor="Gray">
-            <Label Text="Información:" FontSize="18" />
+            <VerticalStackLayout>
+                <Label Text="Información: " FontSize="18" FontAttributes="Bold" />
+                <StackLayout Padding="10" Spacing="10">
+                    <HorizontalStackLayout>
+                        <Label Text="Tipo de sangre: " FontSize="16" FontAttributes="Bold"/>
+                        <Label Text="B+" FontSize="16"  />
+                        <Label Text="{Binding BloodType}" FontSize="16" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Membresía: " FontSize="16" FontAttributes="Bold"/>
+                        <Label Text="Mensual" FontSize="16" />
+                        <Label Text="{Binding Membership}" FontSize="16" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Fecha de finalización: " FontSize="16" FontAttributes="Bold"/>
+                        <Label Text="00/00/2025" FontSize="16" />
+                        <Label Text="{Binding ExpirationDate}" FontSize="16" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Observaciones: " FontSize="16" FontAttributes="Bold"/>
+                        <Label Text="Guapo" FontSize="16" />
+                        <Label Text="{Binding Observations}" FontSize="16" />
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </VerticalStackLayout>
         </Frame>
 
-        <VerticalStackLayout VerticalOptions="CenterAndExpand">
-            <HorizontalStackLayout Spacing="50" HorizontalOptions="Center">
-                <VerticalStackLayout>
-                    <Button Text="Rutinas" FontSize="16" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" Clicked="OnShowRoutinePicker"/>
-                    <Picker x:Name="RoutinePicker"
-                            ItemsSource="{Binding RoutineOptions}"
-                            SelectedItem="{Binding SelectedRoutine}"
-                            Title="Selecciona el musculo a entrenar"
-                            IsVisible="False"/>
+        <VerticalStackLayout Spacing="20" VerticalOptions="FillAndExpand">
+            <Button Text="Rutinas" FontSize="16" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" Clicked="OnShowRoutineButtons"
+            HorizontalOptions="FillAndExpand"/>
 
-                    <Picker x:Name="DetailedRoutinePicker"
-                            ItemsSource="{Binding DetailedRoutines}"
-                            SelectedItem="{Binding SelectedDetailedRoutine}"
-                            Title="Selecciona una rutina detallada"
-                            IsVisible="{Binding IsRoutineVisible}"/>
-                </VerticalStackLayout>
+            <VerticalStackLayout x:Name="DaysButtonsLayout" IsVisible="False" Spacing="8">
+                <Button Text="Lunes" Clicked="OnDaySelected" CommandParameter="RoutineMondayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+                <Button Text="Martes" Clicked="OnDaySelected" CommandParameter="RoutineTuesdayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+                <Button Text="Miércoles" Clicked="OnDaySelected" CommandParameter="RoutineWednesdayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+                <Button Text="Jueves" Clicked="OnDaySelected" CommandParameter="RoutineThursdayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+                <Button Text="Viernes" Clicked="OnDaySelected" CommandParameter="RoutineFridayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+                <Button Text="Sábado" Clicked="OnDaySelected" CommandParameter="RoutineSaturdayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+                <Button Text="Domingo" Clicked="OnDaySelected" CommandParameter="RoutineSundayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
+            HeightRequest="40" WidthRequest="150" FontSize="14" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
 
-                <VerticalStackLayout>
-                    <Button Text="Actividad" FontSize="16" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" Clicked="OnShowDatePicker"/>
-                    <DatePicker x:Name="ActivityDatePicker"
-                                Date="{Binding SelectedDate}"
-                                Format="D"
-                                IsVisible="False"
-                                MaximumDate="{Binding Today}"
-                                DateSelected="OnDateSelected"/>
-                </VerticalStackLayout>
-            </HorizontalStackLayout>
+            <Picker x:Name="RoutinePicker"
+            ItemsSource="{Binding RoutineOptions}"
+            SelectedItem="{Binding SelectedRoutine}"
+            Title="Selecciona el músculo a entrenar"
+            IsVisible="False"/>
+
+            <Picker x:Name="DetailedRoutinePicker"
+            ItemsSource="{Binding DetailedRoutines}"
+            SelectedItem="{Binding SelectedDetailedRoutine}"
+            Title="Selecciona una rutina detallada"
+            IsVisible="{Binding IsRoutineVisible}"/>
+
+            <Button Text="Actividad" FontSize="16" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" Clicked="OnShowDatePicker"
+            HorizontalOptions="FillAndExpand"/>
+
+            <DatePicker x:Name="ActivityDatePicker"
+                Date="{Binding SelectedDate}"
+                Format="D"
+                IsVisible="False"
+                MaximumDate="{Binding Today}"
+                DateSelected="OnDateSelected"/>
         </VerticalStackLayout>
-
-        <Frame HeightRequest="200" BorderColor="Gray">
-            <Label Text="Aquí va la información de rutinas y actividad." />
-        </Frame>
     </VerticalStackLayout>
 </ContentPage>

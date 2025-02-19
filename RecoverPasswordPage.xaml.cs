@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace Mockup;
 
 public partial class RecoverPasswordPage : ContentPage
@@ -14,32 +16,46 @@ public partial class RecoverPasswordPage : ContentPage
         UserEntry.TextChanged += OnUserEntryTextChanged;
     }
 
-    // Validar que solo se ingresen exactamente 6 dígitos
+    // Validación del usuario (permite letras, números y algunos símbolos, entre 3 y 12 caracteres)
     private void OnUserEntryTextChanged(object sender, TextChangedEventArgs e)
     {
         string username = UserEntry.Text ?? "";
 
-        // Limitar a 6 dígitos
-        if (username.Length > 6)
+        // Permitir solo letras, números y algunos caracteres especiales
+        username = Regex.Replace(username, "[^a-zA-Z0-9._,@!*+-]", "");
+
+        // Limitar a 12 caracteres
+        if (username.Length > 12)
         {
-            UserEntry.Text = username.Substring(0, 6); // Limitar a 6 dígitos
+            username = username.Substring(0, 12);
         }
 
-        // Validación del usuario
-        if (username.Length != 6)
+        // Evitar la reasignación del texto si no es necesario
+        if (UserEntry.Text != username)
         {
-            ErrorLabel.Text = "El usuario debe tener 6 dígitos.";
-            ErrorLabel.IsVisible = true;
+            UserEntry.Text = username;
+        }
 
-            // Desactivar el botón si no tiene 6 dígitos
+        // Si el campo está vacío, ocultar la alerta y deshabilitar el botón
+        if (string.IsNullOrWhiteSpace(username))
+        {
+            ErrorLabel.IsVisible = false;
             ContinueButton.IsEnabled = false;
+            return;
+        }
+
+        // Si el usuario tiene entre 3 y 12 caracteres, ocultar la alerta y habilitar el botón
+        if (username.Length >= 3 && username.Length <= 12)
+        {
+            ErrorLabel.IsVisible = false; // Ocultamos la alerta si es válido
+            ContinueButton.IsEnabled = true; // Habilitamos el botón
         }
         else
         {
-            ErrorLabel.IsVisible = false;
-
-            // Habilitar el botón cuando tiene 6 dígitos
-            ContinueButton.IsEnabled = true;
+            // Si el usuario tiene menos de 3 caracteres o más de 12, mostrar la alerta
+            ErrorLabel.Text = "El usuario debe tener entre 3 y 12 caracteres.";
+            ErrorLabel.IsVisible = true;
+            ContinueButton.IsEnabled = false; // Deshabilitar el botón
         }
     }
 
@@ -48,17 +64,10 @@ public partial class RecoverPasswordPage : ContentPage
     {
         string username = UserEntry.Text ?? "";
 
-        // Verificar si el campo está vacío o no tiene 6 dígitos
+        // Verificar si el campo está vacío o no tiene entre 3 y 12 caracteres
         if (string.IsNullOrWhiteSpace(username))
         {
             ErrorLabel.Text = "Por favor ingresa un número de usuario.";
-            ErrorLabel.IsVisible = true;
-            return;
-        }
-
-        if (username.Length != 6)
-        {
-            ErrorLabel.Text = "El número de usuario debe tener 6 dígitos.";
             ErrorLabel.IsVisible = true;
             return;
         }

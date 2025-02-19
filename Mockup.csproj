@@ -47,7 +47,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -57,9 +56,30 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\apertura.png" />
+	  <None Remove="Resources\Images\contrasena.png" />
+	  <None Remove="Resources\Images\curl_barra_recta.png" />
+	  <None Remove="Resources\Images\curl_barra_z.png" />
+	  <None Remove="Resources\Images\curl_concen.png" />
+	  <None Remove="Resources\Images\curl_martillo.png" />
+	  <None Remove="Resources\Images\extencion_triceps.png" />
+	  <None Remove="Resources\Images\extension_triceps_encima_cabeza_con_mancuerna.png" />
+	  <None Remove="Resources\Images\fondos_banco.png" />
 	  <None Remove="Resources\Images\gym.png" />
+	  <None Remove="Resources\Images\hip_thrust_barra.png" />
 	  <None Remove="Resources\Images\identificacion.png" />
+	  <None Remove="Resources\Images\jalon_pecho_polea_alta_agarre_estrecho.png" />
 	  <None Remove="Resources\Images\lock.png" />
+	  <None Remove="Resources\Images\peso_muerto.png" />
+	  <None Remove="Resources\Images\prensa.png" />
+	  <None Remove="Resources\Images\press_declinado.png" />
+	  <None Remove="Resources\Images\press_frances.png" />
+	  <None Remove="Resources\Images\press_inclinado.png" />
+	  <None Remove="Resources\Images\press_plano.png" />
+	  <None Remove="Resources\Images\pull_over.png" />
+	  <None Remove="Resources\Images\remo_barra_t_agarre_cerrado.png" />
+	  <None Remove="Resources\Images\remo_maquina_agarre_neutro.png" />
+	  <None Remove="Resources\Images\sentadillas_bulgaras.png" />
 	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>
 	<ItemGroup>
@@ -84,6 +104,9 @@
 	  <MauiXaml Update="NewPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="puebra.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="RecoverPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -91,6 +114,27 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineFridayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineMondayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineSaturdayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineSundayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineThursdayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineTuesdayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RoutineWednesdayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="UserDashboardPage.xaml">

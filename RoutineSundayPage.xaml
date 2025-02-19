@@ -1,0 +1,21 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mockup.RoutineSundayPage"
+             Title="Domingo - Rutina de Entrenamiento">
+
+    <ScrollView Padding="10">
+        <Frame Padding="20" CornerRadius="15" HasShadow="True" BackgroundColor="White">
+            <VerticalStackLayout Padding="10" Spacing="10">
+                <Label Text="Rutina del Domingo" Padding="50" FontSize="22" FontAttributes="Bold" 
+                   HorizontalOptions="Center" VerticalOptions="Start" Margin="0,0"/>
+
+                <!-- Texto clickeable sin estilo de enlace -->
+                <Label Text="Selecciona el musculo a entrenar" FontSize="14" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnInstructionsTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </VerticalStackLayout>
+        </Frame>
+    </ScrollView>
+</ContentPage>

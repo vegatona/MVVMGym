@@ -17,6 +17,9 @@
     <MauiXaml Update="NewPasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="puebra.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="RecoverPasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -24,6 +27,27 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineFridayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineMondayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineSaturdayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineSundayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineThursdayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineTuesdayPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RoutineWednesdayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="UserDashboardPage.xaml">
