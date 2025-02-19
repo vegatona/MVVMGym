@@ -46,12 +46,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Mockup.NewPasswordPage.xam
 build_metadata.AdditionalFiles.TargetPath = NewPasswordPage.xaml
 build_metadata.AdditionalFiles.RelativePath = NewPasswordPage.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/puebra.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.puebra.xaml
-build_metadata.AdditionalFiles.TargetPath = puebra.xaml
-build_metadata.AdditionalFiles.RelativePath = puebra.xaml
-
 [C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RecoverPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RecoverPasswordPage.xaml

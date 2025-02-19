@@ -134,10 +134,38 @@ namespace Mockup
             RoutinePicker.IsVisible = _isRoutinePickerVisible;
         }
 
-        // Manejador de eventos para mostrar y ocultar los botones de rutina
+        // Método para habilitar/deshabilitar los botones
+        private void UpdateButtonStates()
+        {
+            // Si la rutina está abierta, deshabilitamos el botón de actividad
+            if (isRoutineOpen)
+            {
+                ActivityButton.BackgroundColor = Colors.Gray;
+                ActivityButton.IsEnabled = false;
+            }
+            else
+            {
+                ActivityButton.BackgroundColor = Colors.Black;
+                ActivityButton.IsEnabled = true;
+            }
+
+            // Si la actividad está abierta, deshabilitamos el botón de rutina
+            if (isActivityOpen)
+            {
+                RoutineButton.BackgroundColor = Colors.Gray;
+                RoutineButton.IsEnabled = false;
+            }
+            else
+            {
+                RoutineButton.BackgroundColor = Colors.Black;
+                RoutineButton.IsEnabled = true;
+            }
+        }
+
+        // Mostrar y ocultar el Picker de rutinas
         private void OnShowRoutineButtons(object sender, EventArgs e)
         {
-            // Si la actividad está abierta, no permitimos abrir los botones de rutina
+            // Si la actividad está abierta, no permitimos abrir las rutinas
             if (isActivityOpen)
             {
                 return;
@@ -146,6 +174,9 @@ namespace Mockup
             // Mostrar u ocultar el layout con los botones de los días
             DaysButtonsLayout.IsVisible = !DaysButtonsLayout.IsVisible;
             isRoutineOpen = DaysButtonsLayout.IsVisible;
+
+            // Actualizar los estados de los botones
+            UpdateButtonStates();
         }
 
         // Mostrar y ocultar el DatePicker para la actividad
@@ -160,6 +191,9 @@ namespace Mockup
             _isDatePickerVisible = !_isDatePickerVisible;
             ActivityDatePicker.IsVisible = _isDatePickerVisible;
             isActivityOpen = ActivityDatePicker.IsVisible;
+
+            // Actualizar los estados de los botones
+            UpdateButtonStates();
         }
 
         // Manejador de eventos para la selección de un día

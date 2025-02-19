@@ -80,7 +80,7 @@ namespace Mockup
 
                 case "Espalda":
                     exercises.Add(new Exercise { Name = "Jalón al pecho en polea alta (agarre estrecho) (3x12 reps)", Image = "jalon_pecho_polea_alta_agarre_estrecho.png" });
-                    exercises.Add(new Exercise { Name = "Pullovers (3x15 reps)", Image = "pull_over.png" });
+                    exercises.Add(new Exercise { Name = "Pullover (3x15 reps)", Image = "pull_over.png" });
                     exercises.Add(new Exercise { Name = "Remo con barra T (agarre cerrado) (4x10 reps)", Image = "remo_barra_t_agarre_cerrado.png" });
                     exercises.Add(new Exercise { Name = "Remo en máquina (agarre neutro) (3x10-12 reps)", Image = "remo_maquina_agarre_neutro.png" });
                     break;

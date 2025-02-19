@@ -43,8 +43,8 @@
         </Frame>
 
         <VerticalStackLayout Spacing="20" VerticalOptions="FillAndExpand">
-            <Button Text="Rutinas" FontSize="16" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" Clicked="OnShowRoutineButtons"
-            HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="RoutineButton" Text="Rutinas" FontSize="16" BackgroundColor="Black" TextColor="White" Clicked="OnShowRoutineButtons"
+                HorizontalOptions="FillAndExpand"/>
 
             <VerticalStackLayout x:Name="DaysButtonsLayout" IsVisible="False" Spacing="8">
                 <Button Text="Lunes" Clicked="OnDaySelected" CommandParameter="RoutineMondayPage" BackgroundColor="LightGray" TextColor="Black" Padding="5"
@@ -75,8 +75,8 @@
             Title="Selecciona una rutina detallada"
             IsVisible="{Binding IsRoutineVisible}"/>
 
-            <Button Text="Actividad" FontSize="16" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" Clicked="OnShowDatePicker"
-            HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="ActivityButton" Text="Actividad" FontSize="16" BackgroundColor="Black" TextColor="White" Clicked="OnShowDatePicker"
+                HorizontalOptions="FillAndExpand"/>
 
             <DatePicker x:Name="ActivityDatePicker"
                 Date="{Binding SelectedDate}"

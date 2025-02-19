@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\routinetuesdaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:routinetuesdaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\userdashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:userdashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\routinemondaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:routinemondaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\routinewednesdaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:routinewednesdaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\routinewednesdaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:routinewednesdaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\puebra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:puebra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\routinetuesdaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:routinetuesdaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\userdashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:userdashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,79 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RoutineMondayPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineMondayPage.xaml",
-              "RelativeDocumentMoniker": "RoutineMondayPage.xaml",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineMondayPage.xaml",
-              "RelativeToolTip": "RoutineMondayPage.xaml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T03:08:51.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "puebra.xaml",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\puebra.xaml",
-              "RelativeDocumentMoniker": "puebra.xaml",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\puebra.xaml",
-              "RelativeToolTip": "puebra.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T03:05:03.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoutineTuesdayPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineTuesdayPage.xaml.cs",
-              "RelativeDocumentMoniker": "RoutineTuesdayPage.xaml.cs",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineTuesdayPage.xaml.cs",
-              "RelativeToolTip": "RoutineTuesdayPage.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCMAAAAvAAAAAAAAAA==",
+              "Title": "UserDashboardPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\UserDashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "UserDashboardPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\UserDashboardPage.xaml.cs",
+              "RelativeToolTip": "UserDashboardPage.xaml.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAswJ8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T20:46:06.304Z",
+              "WhenOpened": "2025-02-19T03:49:42.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RoutineTuesdayPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineTuesdayPage.xaml",
-              "RelativeDocumentMoniker": "RoutineTuesdayPage.xaml",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineTuesdayPage.xaml",
-              "RelativeToolTip": "RoutineTuesdayPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Title": "UserDashboardPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\UserDashboardPage.xaml",
+              "RelativeDocumentMoniker": "UserDashboardPage.xaml",
+              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\UserDashboardPage.xaml",
+              "RelativeToolTip": "UserDashboardPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T20:46:04.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoutineWednesdayPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineWednesdayPage.xaml.cs",
-              "RelativeDocumentMoniker": "RoutineWednesdayPage.xaml.cs",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineWednesdayPage.xaml.cs",
-              "RelativeToolTip": "RoutineWednesdayPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T20:45:26.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoutineWednesdayPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineWednesdayPage.xaml",
-              "RelativeDocumentMoniker": "RoutineWednesdayPage.xaml",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RoutineWednesdayPage.xaml",
-              "RelativeToolTip": "RoutineWednesdayPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T20:45:24.678Z",
+              "WhenOpened": "2025-02-19T03:49:40.482Z",
               "EditorCaption": ""
             }
           ]

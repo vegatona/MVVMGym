@@ -17,9 +17,6 @@
     <MauiXaml Update="NewPasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="puebra.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="RecoverPasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
