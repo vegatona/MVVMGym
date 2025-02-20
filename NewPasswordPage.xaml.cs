@@ -11,8 +11,30 @@ public partial class NewPasswordPage : ContentPage
 
     private async void OnPasswordChanged(object sender, EventArgs e)
     {
+        // Limpiar las credenciales almacenadas antes de redirigir
+        ClearUserCredentials();
+
+        // Mostrar el mensaje de éxito
         await DisplayAlert("Éxito", "Tu contraseña ha sido cambiada exitosamente.", "Iniciar sesión");
+
+        // Redirigir a la página de login
         await Shell.Current.GoToAsync("//LoginPage");
+    }
+
+    // Método para limpiar las credenciales del usuario
+    private void ClearUserCredentials()
+    {
+        try
+        {
+            // Eliminar el nombre de usuario y la contraseña de SecureStorage
+            SecureStorage.Remove("username"); // Eliminar el nombre de usuario
+            SecureStorage.Remove("password"); // Eliminar la contraseña
+            Console.WriteLine("Credenciales borradas exitosamente.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error al borrar credenciales: " + ex.Message);
+        }
     }
 
     // Validar contraseña al escribir en la primera casilla

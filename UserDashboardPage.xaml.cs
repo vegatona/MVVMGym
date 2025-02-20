@@ -178,9 +178,6 @@ namespace Mockup
 
             if (confirm)
             {
-                // Eliminar datos de sesión guardados en las preferencias locales
-                Preferences.Clear();
-
                 // Redirigir a la página de inicio de sesión
                 await Shell.Current.GoToAsync("//LoginPage");
             }

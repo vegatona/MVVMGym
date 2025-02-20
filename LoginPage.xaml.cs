@@ -98,7 +98,7 @@ namespace Mockup
             }
 
             // Redirigir a la pantalla del dashboard y pasar el nombre de usuario
-            await Shell.Current.GoToAsync($"//UserDashboardPage?username=Rubén González&userNumber={userNumber}");
+            await Shell.Current.GoToAsync($"//UserDashboardPage?username=Ruben González&userNumber={userNumber}");
         }
     }
 }
