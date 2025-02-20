@@ -17,6 +17,19 @@ namespace Mockup
         public Command GoToRegister => new Command(async () => await Navigation.PushAsync(new RegisterPage()));
         public Command GoToRecoverPassword => new Command(async () => await Navigation.PushAsync(new RecoverPasswordPage()));
 
+        // Método para limpiar las credenciales cuando el usuario salga de la página
+        protected override void OnNavigatedFrom(NavigatedFromEventArgs args)
+        {
+            base.OnNavigatedFrom(args);
+
+            // Limpiar las credenciales cuando el usuario navegue fuera de la página
+            UsernameEntry.Text = string.Empty;
+            PasswordEntry.Text = string.Empty;
+            ErrorLabel.IsVisible = false;
+            PasswordErrorLabel.IsVisible = false;
+            LoginButton.IsEnabled = false;
+        }
+
         // Validación del usuario (permite letras y números, entre 3 y 12 caracteres)
         private void OnUsernameTextChanged(object sender, TextChangedEventArgs e)
         {
@@ -49,7 +62,6 @@ namespace Mockup
                 LoginButton.IsEnabled = !string.IsNullOrWhiteSpace(PasswordEntry.Text) && IsValidPassword(PasswordEntry.Text);
             }
         }
-
 
         // Validación de la contraseña
         private void OnPasswordTextChanged(object sender, TextChangedEventArgs e)

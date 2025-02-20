@@ -144,7 +144,7 @@ namespace Mockup
                 ActivityButton.BackgroundColor = Colors.Gray;
                 ActivityButton.IsEnabled = false;
             }
-            
+
 
             // Si la actividad está abierta, deshabilitamos el botón de rutina
             if (isActivityOpen)
