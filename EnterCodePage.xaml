@@ -8,9 +8,9 @@
             <!-- Título y subtítulo -->
             <VerticalStackLayout Spacing="10">
                 <Label Text="Código" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" 
-                       Margin="0,100,0,0"/>
+                       Margin="40,100,40,5"/>
+                <Image Source="codigo.png" WidthRequest="1500" HeightRequest="250" VerticalOptions="Center" Margin="40,0,0,5"/>
                 <Label Text="Ingresa tu Código correctamente" FontSize="14" HorizontalOptions="Center"/>
-
                 <!-- Código de verificación -->
                 <HorizontalStackLayout HorizontalOptions="Center" Spacing="5">
                     <Frame BorderColor="Gray" Padding="0" HasShadow="False" CornerRadius="5">

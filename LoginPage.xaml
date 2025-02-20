@@ -29,7 +29,8 @@
             <Frame CornerRadius="10" BackgroundColor="#F0F0F0" Padding="10">
                 <HorizontalStackLayout Spacing="10">
                     <Image Source="lock.png" WidthRequest="25" HeightRequest="25" VerticalOptions="Center"/>
-                    <Entry x:Name="PasswordEntry" Placeholder="Usuario" Keyboard="Text" TextChanged="OnUsernameTextChanged" WidthRequest="2000"/>
+                    <Entry x:Name="PasswordEntry" Placeholder="Contraseña" Keyboard="Text" TextChanged="OnUsernameTextChanged" WidthRequest="2000" 
+                           IsPassword="True"/>
                 </HorizontalStackLayout>
             </Frame>
             <Label x:Name="PasswordErrorLabel" TextColor="Red" FontSize="12" IsVisible="False"/>

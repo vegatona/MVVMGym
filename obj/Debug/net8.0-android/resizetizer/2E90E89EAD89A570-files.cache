@@ -1,4 +1,5 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\apertura.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\codigo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\contrasena.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\curl_barra_recta.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\curl_barra_z.png
@@ -12,6 +13,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\hip_thrust_barra.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\identificacion.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\jalon_pecho_polea_alta_agarre_estrecho.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\lock.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\logout.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\nueva_contrasena.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\peso_muerto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\prensa.png

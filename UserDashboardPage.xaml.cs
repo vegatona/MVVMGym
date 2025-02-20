@@ -6,6 +6,7 @@ namespace Mockup
 {
     [QueryProperty(nameof(Username), "username")]
     [QueryProperty(nameof(UserNumber), "userNumber")]
+
     public partial class UserDashboardPage : ContentPage
     {
         private string _username;
@@ -143,11 +144,7 @@ namespace Mockup
                 ActivityButton.BackgroundColor = Colors.Gray;
                 ActivityButton.IsEnabled = false;
             }
-            else
-            {
-                ActivityButton.BackgroundColor = Colors.Black;
-                ActivityButton.IsEnabled = true;
-            }
+            
 
             // Si la actividad está abierta, deshabilitamos el botón de rutina
             if (isActivityOpen)
@@ -165,35 +162,28 @@ namespace Mockup
         // Mostrar y ocultar el Picker de rutinas
         private void OnShowRoutineButtons(object sender, EventArgs e)
         {
-            // Si la actividad está abierta, no permitimos abrir las rutinas
-            if (isActivityOpen)
-            {
-                return;
-            }
-
-            // Mostrar u ocultar el layout con los botones de los días
             DaysButtonsLayout.IsVisible = !DaysButtonsLayout.IsVisible;
-            isRoutineOpen = DaysButtonsLayout.IsVisible;
-
-            // Actualizar los estados de los botones
-            UpdateButtonStates();
         }
 
         // Mostrar y ocultar el DatePicker para la actividad
         private void OnShowDatePicker(object sender, EventArgs e)
         {
-            // Si las rutinas están abiertas, no permitimos abrir la actividad
-            if (isRoutineOpen)
-            {
-                return;
-            }
-
             _isDatePickerVisible = !_isDatePickerVisible;
             ActivityDatePicker.IsVisible = _isDatePickerVisible;
-            isActivityOpen = ActivityDatePicker.IsVisible;
+        }
 
-            // Actualizar los estados de los botones
-            UpdateButtonStates();
+        private async void OnLogoutClicked(object sender, EventArgs e)
+        {
+            bool confirm = await DisplayAlert("Cerrar sesión", "¿Estás seguro de que quieres cerrar sesión?", "Sí", "No");
+
+            if (confirm)
+            {
+                // Eliminar datos de sesión guardados en las preferencias locales
+                Preferences.Clear();
+
+                // Redirigir a la página de inicio de sesión
+                await Shell.Current.GoToAsync("//LoginPage");
+            }
         }
 
         // Manejador de eventos para la selección de un día

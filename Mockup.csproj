@@ -57,6 +57,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\apertura.png" />
+	  <None Remove="Resources\Images\codigo.png" />
 	  <None Remove="Resources\Images\contrasena.png" />
 	  <None Remove="Resources\Images\curl_barra_recta.png" />
 	  <None Remove="Resources\Images\curl_barra_z.png" />
@@ -70,6 +71,7 @@
 	  <None Remove="Resources\Images\identificacion.png" />
 	  <None Remove="Resources\Images\jalon_pecho_polea_alta_agarre_estrecho.png" />
 	  <None Remove="Resources\Images\lock.png" />
+	  <None Remove="Resources\Images\logout.png" />
 	  <None Remove="Resources\Images\nueva_contrasena.png" />
 	  <None Remove="Resources\Images\peso_muerto.png" />
 	  <None Remove="Resources\Images\prensa.png" />

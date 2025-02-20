@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mockup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+292eefd1373613c2db51d4765df3aecaa1905e19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+db35f1148e770375a176d16b780a7c643eb168cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mockup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mockup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
