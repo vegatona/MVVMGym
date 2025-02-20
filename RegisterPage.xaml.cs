@@ -10,6 +10,13 @@ public partial class RegisterPage : ContentPage
         BindingContext = this;
     }
 
+    public Command GoToLogin => new Command(async () => await Navigation.PushAsync(new LoginPage()));
+
+    private async void NavigateToLogin()
+    {
+        await Navigation.PushAsync(new LoginPage());
+    }
+
     // Validación del usuario (permite letras y números, entre 3 y 12 caracteres)
     private void OnUsernameTextChanged(object sender, TextChangedEventArgs e)
     {

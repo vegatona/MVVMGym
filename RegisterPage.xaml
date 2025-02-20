@@ -46,13 +46,12 @@
             <!-- Botón de registro -->
             <Button x:Name="RegisterButton" Text="Registrarse" BackgroundColor="Black" TextColor="White" CornerRadius="5" IsEnabled="False" Clicked="OnRegisterClicked"/>
 
-            <!-- Link para ir al Login -->
             <!-- Botón para ir al Login -->
-            <Label GestureRecognizers="{TapGestureRecognizer Command={Binding GoToLogin}}">
+            <Label HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="¿Ya tienes una cuenta? " />
-                        <Span Text="Inicia sesión aquí" TextColor="Blue"/>
+                        <Span Text="¿Ya tienes una cuenta?" GestureRecognizers="{TapGestureRecognizer Command={Binding GoToLogin}}" />
+                        <Span Text=" Inicia Sesión aquí" TextColor="Blue" GestureRecognizers="{TapGestureRecognizer Command={Binding GoToLogin}}" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
