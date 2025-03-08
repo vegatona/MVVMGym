@@ -8,108 +8,118 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Mockup
-build_property.ProjectDir = C:\Users\ragon\OneDrive\Escritorio\RubenVisualStudio\Mockup\
+build_property.ProjectDir = C:\Users\Tamara\Source\Repos\MockupsGym\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/App.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mockup.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/AppShell.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mockup.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/EnterCodePage.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/EnterCodePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.EnterCodePage.xaml
-build_metadata.AdditionalFiles.TargetPath = EnterCodePage.xaml
-build_metadata.AdditionalFiles.RelativePath = EnterCodePage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.EnterCodePage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\EnterCodePage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\EnterCodePage.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/LoginPage.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\LoginPage.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/NewPasswordPage.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/NewPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.NewPasswordPage.xaml
-build_metadata.AdditionalFiles.TargetPath = NewPasswordPage.xaml
-build_metadata.AdditionalFiles.RelativePath = NewPasswordPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.NewPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\NewPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\NewPasswordPage.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RecoverPasswordPage.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RecoverPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RecoverPasswordPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RecoverPasswordPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RecoverPasswordPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RecoverPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RecoverPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RecoverPasswordPage.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RegisterPage.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RegisterPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RegisterPage.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/Resources/Styles/Colors.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineFridayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineFridayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineFridayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineFridayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineMondayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineMondayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineMondayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineMondayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineSaturdayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineSaturdayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineSaturdayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineSaturdayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineSundayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineSundayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineSundayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineSundayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineThursdayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineThursdayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineThursdayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineThursdayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineTuesdayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineTuesdayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineTuesdayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineTuesdayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineWednesdayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineWednesdayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineWednesdayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineWednesdayPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/UserDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.UserDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\View\UserDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\View\UserDashboardPage.xaml
+
+[C:/Users/Tamara/Source/Repos/MockupsGym/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mockup.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/Resources/Styles/Styles.xaml]
+[C:/Users/Tamara/Source/Repos/MockupsGym/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mockup.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineFridayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineFridayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineFridayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineFridayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineMondayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineMondayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineMondayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineMondayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineSaturdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineSaturdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineSaturdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineSaturdayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineSundayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineSundayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineSundayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineSundayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineThursdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineThursdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineThursdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineThursdayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineTuesdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineTuesdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineTuesdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineTuesdayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/RoutineWednesdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.RoutineWednesdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RoutineWednesdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RoutineWednesdayPage.xaml
-
-[C:/Users/ragon/OneDrive/Escritorio/RubenVisualStudio/Mockup/UserDashboardPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.UserDashboardPage.xaml
-build_metadata.AdditionalFiles.TargetPath = UserDashboardPage.xaml
-build_metadata.AdditionalFiles.RelativePath = UserDashboardPage.xaml

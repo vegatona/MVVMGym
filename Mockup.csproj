@@ -92,55 +92,55 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="RegisterPage.xaml.cs">
+	  <Compile Update="MVVM\View\RegisterPage.xaml.cs">
 	    <DependentUpon>RegisterPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="LoginPage.xaml.cs">
+	  <Compile Update="MVVM\View\LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="EnterCodePage.xaml">
+	  <MauiXaml Update="MVVM\View\EnterCodePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="NewPasswordPage.xaml">
+	  <MauiXaml Update="MVVM\View\NewPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="puebra.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RecoverPasswordPage.xaml">
+	  <MauiXaml Update="MVVM\View\RecoverPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RegisterPage.xaml">
+	  <MauiXaml Update="MVVM\View\RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="LoginPage.xaml">
+	  <MauiXaml Update="MVVM\View\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineFridayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineFridayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineMondayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineMondayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineSaturdayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineSaturdayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineSundayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineSundayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineThursdayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineThursdayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineTuesdayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineTuesdayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="RoutineWednesdayPage.xaml">
+	  <MauiXaml Update="MVVM\View\RoutineWednesdayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="UserDashboardPage.xaml">
+	  <MauiXaml Update="MVVM\View\UserDashboardPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

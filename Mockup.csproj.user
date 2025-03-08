@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Asus _I003DD (Android 9.0 - API 28)</ActiveDebugProfile>
+    <ActiveDebugProfile>Pixel 5 - API 33 (Android 13.0 - API 33)</ActiveDebugProfile>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_34</DefaultDevice>
   </PropertyGroup>
@@ -11,43 +11,43 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="EnterCodePage.xaml">
+    <MauiXaml Update="MVVM\View\EnterCodePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="NewPasswordPage.xaml">
+    <MauiXaml Update="MVVM\View\NewPasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RecoverPasswordPage.xaml">
+    <MauiXaml Update="MVVM\View\RecoverPasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RegisterPage.xaml">
+    <MauiXaml Update="MVVM\View\RegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="LoginPage.xaml">
+    <MauiXaml Update="MVVM\View\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineFridayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineFridayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineMondayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineMondayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineSaturdayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineSaturdayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineSundayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineSundayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineThursdayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineThursdayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineTuesdayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineTuesdayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="RoutineWednesdayPage.xaml">
+    <MauiXaml Update="MVVM\View\RoutineWednesdayPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="UserDashboardPage.xaml">
+    <MauiXaml Update="MVVM\View\UserDashboardPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
