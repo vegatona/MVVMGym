@@ -3,6 +3,11 @@ build_property.EnableAotAnalyzer =
 build_property.EnableSingleFileAnalyzer = 
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
 build_property.TargetFramework = net8.0-maccatalyst
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -59,48 +64,6 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\View\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\View\RegisterPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineFridayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineFridayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineFridayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineFridayPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineMondayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineMondayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineMondayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineMondayPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineSaturdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineSaturdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineSaturdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineSaturdayPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineSundayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineSundayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineSundayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineSundayPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineThursdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineThursdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineThursdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineThursdayPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineTuesdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineTuesdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineTuesdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineTuesdayPage.xaml
-
-[C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/RoutineWednesdayPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Mockup.MVVM.View.RoutineWednesdayPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\View\RoutineWednesdayPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\View\RoutineWednesdayPage.xaml
 
 [C:/Users/Tamara/Source/Repos/MockupsGym/MVVM/View/UserDashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

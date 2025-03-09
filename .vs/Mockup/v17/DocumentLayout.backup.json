@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\",
+  "WorkspaceRootPath": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\entercodepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:entercodepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\tamara\\source\\repos\\mockupsgym\\mvvm\\view\\routinefridaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:mvvm\\view\\routinefridaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\entercodepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:entercodepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\tamara\\source\\repos\\mockupsgym\\mvvm\\view\\routinefridaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:mvvm\\view\\routinefridaypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\tamara\\source\\repos\\mockupsgym\\mvvm\\viewmodel\\routinefridayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:mvvm\\viewmodel\\routinefridayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\ragon\\onedrive\\escritorio\\rubenvisualstudio\\mockup\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|c:\\users\\tamara\\source\\repos\\mockupsgym\\mvvm\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FFC6799-8079-4CC8-A23C-3077F4A0BEAC}|Mockup.csproj|solutionrelative:mvvm\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +26,91 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnterCodePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\EnterCodePage.xaml.cs",
-              "RelativeDocumentMoniker": "EnterCodePage.xaml.cs",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\EnterCodePage.xaml.cs",
-              "RelativeToolTip": "EnterCodePage.xaml.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwFUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RoutineFridayViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\MVVM\\ViewModel\\RoutineFridayViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\RoutineFridayViewModel.cs",
+              "ToolTip": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\MVVM\\ViewModel\\RoutineFridayViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\RoutineFridayViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T18:34:19.04Z",
+              "WhenOpened": "2025-03-09T21:15:23.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnterCodePage.xaml",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\EnterCodePage.xaml",
-              "RelativeDocumentMoniker": "EnterCodePage.xaml",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\EnterCodePage.xaml",
-              "RelativeToolTip": "EnterCodePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RoutineFridayPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\MVVM\\View\\RoutineFridayPage.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\RoutineFridayPage.xaml",
+              "ToolTip": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\MVVM\\View\\RoutineFridayPage.xaml",
+              "RelativeToolTip": "MVVM\\View\\RoutineFridayPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-05T18:34:17.167Z",
+              "WhenOpened": "2025-03-09T21:15:22.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RegisterPage.xaml.cs",
-              "RelativeToolTip": "RegisterPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RoutineFridayPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\MVVM\\View\\RoutineFridayPage.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\View\\RoutineFridayPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Tamara\\source\\repos\\MockupsGym\\MVVM\\View\\RoutineFridayPage.xaml.cs",
+              "RelativeToolTip": "MVVM\\View\\RoutineFridayPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:58:14.123Z",
+              "WhenOpened": "2025-03-09T21:15:19.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "RegisterPage.xaml",
-              "ToolTip": "C:\\Users\\ragon\\OneDrive\\Escritorio\\RubenVisualStudio\\Mockup\\RegisterPage.xaml",
-              "RelativeToolTip": "RegisterPage.xaml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T14:40:13.531Z"
+              "Title": "Exercise.cs",
+              "DocumentMoniker": "C:\\Users\\Tamara\\Source\\Repos\\MockupsGym\\MVVM\\Models\\Exercise.cs",
+              "RelativeDocumentMoniker": "MVVM\\Models\\Exercise.cs",
+              "ToolTip": "C:\\Users\\Tamara\\Source\\Repos\\MockupsGym\\MVVM\\Models\\Exercise.cs",
+              "RelativeToolTip": "MVVM\\Models\\Exercise.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T20:30:26.744Z",
+              "EditorCaption": ""
             }
           ]
         }

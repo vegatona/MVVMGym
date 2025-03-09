@@ -26,27 +26,6 @@
     <MauiXaml Update="MVVM\View\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineFridayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineMondayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineSaturdayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineSundayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineThursdayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineTuesdayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="MVVM\View\RoutineWednesdayPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="MVVM\View\UserDashboardPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

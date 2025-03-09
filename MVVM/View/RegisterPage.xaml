@@ -2,8 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mockup.RegisterPage"
+             xmlns:vm="clr-namespace:Mockup.MVVM.ViewModel"
              Title="Registro - Iron Revolution Center"
              BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <vm:RegisterViewModel/>
+    </ContentPage.BindingContext>
 
     <Grid RowDefinitions="*,Auto">
         <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
@@ -14,44 +19,42 @@
             <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="10">
                 <HorizontalStackLayout Spacing="10">
                     <Image Source="identificacion.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center"/>
-                    <Entry x:Name="UsernameEntry" Placeholder="Usuario" Keyboard="Text" TextChanged="OnUsernameTextChanged" WidthRequest="2000"/>
+                    <Entry Placeholder="Usuario" Text="{Binding Username, Mode=TwoWay}" Keyboard="Text"/>
                 </HorizontalStackLayout>
             </Frame>
-
-            <!-- Alerta debajo del campo de usuario -->
-            <Label x:Name="UsernameErrorLabel" TextColor="Red" IsVisible="False"/>
+            <Label Text="{Binding UsernameError}" TextColor="Red" IsVisible="{Binding IsUsernameErrorVisible}"/>
 
             <!-- Campo de Contraseña -->
             <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="10">
                 <HorizontalStackLayout Spacing="10">
                     <Image Source="lock.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center"/>
-                    <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" TextChanged="OnPasswordTextChanged" WidthRequest="2000"/>
+                    <Entry Placeholder="Contraseña" Text="{Binding Password, Mode=TwoWay}" IsPassword="True"/>
                 </HorizontalStackLayout>
             </Frame>
-
-            <!-- Alerta debajo del campo de contraseña -->
-            <Label x:Name="PasswordErrorLabel" TextColor="Red" IsVisible="False" />
+            <Label Text="{Binding PasswordError}" TextColor="Red" IsVisible="{Binding IsPasswordErrorVisible}"/>
 
             <!-- Repetir Contraseña -->
             <Frame CornerRadius="5" BackgroundColor="#F0F0F0" Padding="10">
                 <HorizontalStackLayout Spacing="10">
                     <Image Source="lock.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center"/>
-                    <Entry x:Name="ConfirmPasswordEntry" Placeholder="Repite Contraseña" IsPassword="True" TextChanged="OnPasswordTextChanged" WidthRequest="2000"/>
+                    <Entry Placeholder="Repite Contraseña" Text="{Binding ConfirmPassword, Mode=TwoWay}" IsPassword="True"/>
                 </HorizontalStackLayout>
             </Frame>
-
-            <!-- Alerta de las contraseñas no coinciden -->
-            <Label x:Name="ConfirmPasswordErrorLabel" TextColor="Red" IsVisible="False"/>
+            <Label Text="{Binding ConfirmPasswordError}" TextColor="Red" IsVisible="{Binding IsConfirmPasswordErrorVisible}"/>
 
             <!-- Botón de registro -->
-            <Button x:Name="RegisterButton" Text="Registrarse" BackgroundColor="Black" TextColor="White" CornerRadius="5" IsEnabled="False" Clicked="OnRegisterClicked"/>
+            <Button Text="Registrarse" BackgroundColor="Black" TextColor="White" CornerRadius="5" Command="{Binding RegisterCommand}" IsEnabled="{Binding IsRegisterEnabled}"/>
 
             <!-- Botón para ir al Login -->
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="¿Ya tienes una cuenta?" GestureRecognizers="{TapGestureRecognizer Command={Binding GoToLogin}}" />
-                        <Span Text=" Inicia Sesión aquí" TextColor="Blue" GestureRecognizers="{TapGestureRecognizer Command={Binding GoToLogin}}" />
+                        <Span Text="¿Ya tienes una cuenta?" />
+                        <Span Text=" Inicia Sesión aquí" TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToLoginCommand}" />
+                            </Span.GestureRecognizers>
+                        </Span>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
